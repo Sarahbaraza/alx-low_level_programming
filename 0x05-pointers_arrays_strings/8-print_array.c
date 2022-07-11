@@ -1,19 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - print n of int array
- * @a: pointer
- * @n: n
+ * @a: pointer to first int
+ * @n: pointer to second int
+ * Return: nothing
  */
 void print_array(int *a, int n)
 {
-	short c = 0;
-
-	while (n-- > 0)
-	{
-		printf("%d", a[c++]);
-		if (n != 0)
-			printf(", ");
-	}
-
-	printf("\n");
+int i = 0;
+for (i = 0; i < n; i++)
+{
+printf("%d", a[i]);
+if (i < n - 1)
+printf(", ");
+}
+printf("\n");
 }
