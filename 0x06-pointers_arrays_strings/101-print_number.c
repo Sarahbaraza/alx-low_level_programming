@@ -1,5 +1,11 @@
 #include <stdio.h>
-int main(void)
+
+/**
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
+ */
+void print_number(int n)
 {
 	int n;
 	int a[5];
