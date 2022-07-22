@@ -1,5 +1,5 @@
 #include "main.h"
-#include "2-strlen.c"
+#include <string.h>
 /**
  * _puts - puts a string
  *
@@ -7,11 +7,11 @@
  */
 void _puts(char *str)
 {
-	int i;
-
-	for (i = 0; *(str + i) != '\0'; i++);
-	{
-		_putchar(*(str + i));
-	}
-	_putchar('\n');
+int len, i;
+len = strlen(str);
+for (i = 0; i < len; i++)
+{
+_putchar(str[i]);
+}
+_putchar('\n');
 }
