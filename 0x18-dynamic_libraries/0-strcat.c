@@ -1,17 +1,30 @@
 #include "main.h"
-
 /**
- * _isupper - checks for uppercase letters
- * @c: character to check
+ * _strcat - concats two arrays
  *
- * Return: 0 or 1
+ * @dest: destination of concat
+ * @src: source array to concat
+ *
+ * Return: char value
  */
-
-
-int _isupper(int c)
+char *_strcat(char *dest, char *src)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	else
-		return (0);
+	int i;
+	int j;
+
+	for (j = 0; dest[j] != '\0'; j++)
+	{}
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[j + i] = src[i];
+	}
+	dest[j + i] = '\0';
+
+	return (dest);
+
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
